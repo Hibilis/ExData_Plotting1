@@ -12,7 +12,7 @@ mydata$datetime = strptime(mydata$datetimestmp,"%d/%m/%Y %H:%M:%S")
 
 #Create Plot:
 
-png(width=450, height=450, units = "px",file="Plot3.png")
+png(width=480, height=480, units = "px",file="Plot3.png")
 
 with(mydata,plot(datetime,Sub_metering_1,type="l",ylab = "Energy sub metering", xlab=""))
 with(mydata,lines(datetime,Sub_metering_2,type="l",col = "red"))
