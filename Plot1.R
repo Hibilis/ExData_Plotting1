@@ -12,14 +12,17 @@ mydata$datetimestmp <- paste(mydata$Date,mydata$Time)
 mydata$datetime = strptime(mydata$datetimestmp,"%d/%m/%Y %H:%M:%S")
 
 #Create Plot
+
+png(width=480, height=480, units = "px",file="Plot1.png")
+
 hist(mydata$Global_active_power,
      main = 'Global Active Power',
      xlab = 'Global Active Power (kilowatts)',
      ylab = 'Frequency',
      col = 'red')
 
-#Create .png file and turn off output device
-dev.copy(png,file = "Plot1.png")
+#Turn off output device
+
 dev.off()
 
 
