@@ -14,8 +14,10 @@ mydata$datetime = strptime(mydata$datetimestmp,"%d/%m/%Y %H:%M:%S")
 
 #Create Plot:
 
+png(width=480, height=480, units = "px",file="Plot2.png")
+
 with (mydata,plot(datetime,Global_active_power,type="l",
                   ylab = "Global Active Power (kilowatts)",xlab=""))
 
-dev.copy(png,file = "Plot2.png")
+#Turn off device output
 dev.off()
