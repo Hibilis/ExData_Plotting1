@@ -12,7 +12,7 @@ mydata$datetime = strptime(mydata$datetimestmp,"%d/%m/%Y %H:%M:%S")
 
 #Create Plots:
 
-png(width=450, height=450, units = "px",file="Plot4.png")
+png(width=480, height=480, units = "px",file="Plot4.png")
 
 par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0.5,0.5,2,0.5))
 
