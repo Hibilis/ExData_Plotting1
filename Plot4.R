@@ -18,7 +18,7 @@ par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0.5,0.5,2,0.5))
 
 #first graph, top left
 with (mydata,plot(datetime,Global_active_power,type="l",
-                  ylab = "Global Active Power (kilowatts)",xlab=""))
+                  ylab = "Global Active Power",xlab=""))
 
 #second graph, top right
 with (mydata,plot(datetime,Voltage,type="l",
